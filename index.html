@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Interactive Quiz</h1>
+        
+        <!-- Page 1 -->
+        <div class="quiz-page" id="page1">
+            <div class="question-container">
+                <p class="question">1. What is the capital of France?</p>
+                <label><input type="radio" name="q1" value="Paris"> Paris</label><br>
+                <label><input type="radio" name="q1" value="London"> London</label><br>
+                <label><input type="radio" name="q1" value="Berlin"> Berlin</label>
+            </div>
+            <div class="question-container">
+                <p class="question">2. What is the square root of 64?</p>
+                <label><input type="radio" name="q2" value="6"> 6</label><br>
+                <label><input type="radio" name="q2" value="8"> 8</label><br>
+                <label><input type="radio" name="q2" value="10"> 10</label>
+            </div>
+            <div class="question-container">
+                <p class="question">3. Which planet is known as the Red Planet?</p>
+                <label><input type="radio" name="q3" value="Earth"> Earth</label><br>
+                <label><input type="radio" name="q3" value="Mars"> Mars</label><br>
+                <label><input type="radio" name="q3" value="Jupiter"> Jupiter</label>
+            </div>
+            <button onclick="nextPage(2)">Next</button>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="quiz-page" id="page2" style="display:none;">
+            <div class="question-container">
+                <p class="question">4. What is the chemical symbol for water?</p>
+                <label><input type="radio" name="q4" value="H2O"> H2O</label><br>
+                <label><input type="radio" name="q4" value="O2"> O2</label><br>
+                <label><input type="radio" name="q4" value="CO2"> CO2</label>
+            </div>
+            <div class="question-container">
+                <p class="question">5. Who wrote 'Romeo and Juliet'?</p>
+                <label><input type="radio" name="q5" value="Shakespeare"> Shakespeare</label><br>
+                <label><input type="radio" name="q5" value="Hemingway"> Hemingway</label><br>
+                <label><input type="radio" name="q5" value="Twain"> Twain</label>
+            </div>
+            <div class="question-container">
+                <p class="question">6. What is the boiling point of water?</p>
+                <label><input type="radio" name="q6" value="100°C"> 100°C</label><br>
+                <label><input type="radio" name="q6" value="90°C"> 90°C</label><br>
+                <label><input type="radio" name="q6" value="120°C"> 120°C</label>
+            </div>
+            <button onclick="previousPage(1)">Previous</button>
+            <button onclick="nextPage(3)">Next</button>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="quiz-page" id="page3" style="display:none;">
+            <div class="question-container">
+                <p class="question">7. What is the largest planet in our solar system?</p>
+                <label><input type="radio" name="q7" value="Jupiter"> Jupiter</label><br>
+                <label><input type="radio" name="q7" value="Saturn"> Saturn</label><br>
+                <label><input type="radio" name="q7" value="Neptune"> Neptune</label>
+            </div>
+            <div class="question-container">
+                <p class="question">8. Who developed the theory of relativity?</p>
+                <label><input type="radio" name="q8" value="Einstein"> Einstein</label><br>
+                <label><input type="radio" name="q8" value="Newton"> Newton</label><br>
+                <label><input type="radio" name="q8" value="Galileo"> Galileo</label>
+            </div>
+            <div class="question-container">
+                <p class="question">9. Which ocean is the largest?</p>
+                <label><input type="radio" name="q9" value="Pacific"> Pacific</label><br>
+                <label><input type="radio" name="q9" value="Atlantic"> Atlantic</label><br>
+                <label><input type="radio" name="q9" value="Indian"> Indian</label>
+            </div>
+            <button onclick="previousPage(2)">Previous</button>
+            <button onclick="submitQuiz()">Submit</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
