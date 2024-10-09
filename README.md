@@ -14,7 +14,7 @@
 **JavaScript:** Utilized to handle interactive features and dynamic content, providing a responsive and functional Quiz Game experience.
 
 # How to View
-You can explore the Quiz Game by visiting  https://manikandansridharan.github.io/Nostra-E-Commerce-Dress_Shop/. Feel free to browse the collection and reach out if you have any questions or collaboration ideas!
+You can explore the Quiz Game by visiting  https://manikandansridharan.github.io/Quiz-Game/. Feel free to browse the collection and reach out if you have any questions or collaboration ideas!
 
 # Contributing
 We welcome contributions from the community to enhance and improve our Quiz Game website. Whether you have suggestions for new features or improvements, your input is valuable! To contribute, fork this repository, make your changes, and submit a pull request.
